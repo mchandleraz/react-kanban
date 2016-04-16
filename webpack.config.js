@@ -3,6 +3,8 @@ const merge = require('webpack-merge');
 const path = require('path');
 
 const EVENT = process.env.npm_lifecycle_event;
+process.env.BABEL_ENV = EVENT;
+
 
 const PATHS = {
   app: path.join(__dirname, 'app'),
